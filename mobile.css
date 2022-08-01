@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --primary: #bbc5d5;
+  --secondary: #354052;
+  --logoColor: #fbb900;
+}
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+}
+@media screen and (max-width) {
+  .top-navigation {
+    display: flex;
+    /* flex: 0.2fr 0.6fr 0.2fr; */
+  }
+}
