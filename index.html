@@ -7,19 +7,29 @@
     <title>Providus Bank</title>
     <script
       src="https://kit.fontawesome.com/90dab9a3e6.js"
-      crossorigin="anonymous"
+      crossorigin="anonymous" defer
     ></script>
+    <script src="./app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style650pxmaxw.css" />
+    <link rel="stylesheet" href="style460pxmaxw.css" />
   </head>
   <body>
     <div class="container">
       <!-- left-sidebar -->
-      <div class="left-sidebar">
-        <div class="left-sidebar-wrapper">
+      <div class="overlay hide" id="overlay">
+        <div  class="checkbtn" >
+          <i class="fa fa-close" ></i>
+
+        </div>
+      </div>
+      <div class="left-sidebar hide" id="left-side">
+        <!-- <div class="left-sidebar-wrapper"> -->
           <!-- logo -->
           <div class="logo">
             <img
@@ -85,7 +95,7 @@
                 <h2>Employee Hub</h2>
                 <p>Lorem ipsum dolor sit superset</p>
               </div>
-            </div>
+            <!-- </div> -->
             -->
             <!-- end of resource -->
           </div>
@@ -120,10 +130,10 @@
             </div>
             <button class="logout-btn">Logout</button>
           </div>
-          <input type="checkbox" id="check" />
-          <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-          </label>
+          <!-- <input type="checkbox" id="check" /> -->
+          <div id="checkbtn" class="checkbtn">
+            <i class="fa fa-bars" ></i>
+          </div>
         </div>
         <div class="main-section">
           <div class="hero-img">
@@ -293,7 +303,6 @@
 
     <!-- Content Later -->
 
-    <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   
   </body>
 </html>
